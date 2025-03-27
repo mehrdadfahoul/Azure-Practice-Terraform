@@ -1,0 +1,12 @@
+- name: Install Apache and deploy on Linux Server
+  host: all
+  become: yes
+  tasks:
+    - name: install apache
+      apt:
+        name: apache2
+        state: present
+        update_cache: yes
+    - name: Deploy Index File
+      copy:
+        dest: index.html /var/www/html/index.html

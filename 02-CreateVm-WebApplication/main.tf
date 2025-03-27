@@ -1,6 +1,6 @@
 provider "azurerm" {
     features {}
-    subscription_id = "a557decd-c5ef-4ca5-a502-88e940a5c4da"
+    subscription_id = "Enter Your subscription"
 }
 resource "azurerm_resource_group" "RG" {
     name = "RG"
